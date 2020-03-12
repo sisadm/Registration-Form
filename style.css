@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Header*/
+
+header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #FEF8E2;
+    background-color: #FB8122;
+    width: 100%;
+
+}
+
+h1 {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 3em;
+    
+    
+    
+}
+
+
+
+main {
+    
+    margin: 0 auto;
+    max-width: 700px;
+    background-color: #1D2228;
+}
+
+
+
+
+/*Top part*/
+
+h2,
+h2 + p {
+    text-align: center;
+    width: 96%;
+    margin: 0 auto;
+    
+}
+
+h2 {
+    padding: 1em 0 5px 0;
+    text-align: center;
+}
+
+h2 +p {
+    padding-bottom: 1em;
+    margin-bottom: 0.4em;
+    border-bottom: 3px solid #FEF8E2;
+}
+
+h2,
+legend {
+    color: #E1E2E2;
+}   
+
+p, 
+label {
+    color: #FB8122;
+}
+
+
+/*Form part*/
+
+fieldset {
+    width: 96%;
+    margin: 0 auto;
+    border: none;
+    padding: 1em 0 1em;
+}
+
+
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+    margin: 10px 0; 
+    border-radius: 5px;
+    padding-right: 5px;
+    background-image: linear-gradient(to left, #2f3542, #333944, #a4b0be, #747d8c/*#d0d6dd, #8190a3, #6b7f92*/ );
+    background-size: 250%;
+    transition: 0.7s;
+    color: white;
+    font-size: 100%;
+}
+
+textarea {
+    height: auto;
+    width: 98%;
+}
+
+input::placeholder {
+    font-size: 13px;
+    text-align: right;
+    font-style: italic;
+    color: #E1E2E2;
+    padding-right: 10px;
+}
+
+input:focus,
+select:focus, 
+textarea:focus {
+    outline: 0;
+    background-position: right;
+}
+
+
+
+option:disabled {
+    color: blue;
+    font-size: 5px;
+}
+
+
+legend {
+    font-weight: 600;
+    font-size: 1.45em;
+    padding: 0.8em 0 0.3em;
+    border-top: 1px solid #FEF8E2;
+    width: 100%;
+    
+}
+
+
+label {
+    margin-top: 1em;
+}
+
+
+
+/*bottom part*/
+
+fieldset:last-child p {
+    margin: 0;
+}
+
+fieldset:last-child label {
+    display: block;
+    align-items: center;
+}
+
+fieldset:last-child input {
+    margin: 0 1em 4px 0;
+}
+
+textarea::placeholder {
+    font-size: 18px;
+    text-align: left;
+    font-style: italic;
+    color: #E1E2E2;
+    padding-right: 10px;
+}
+
+button {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    padding: 18px 38px;
+    border-radius: 15px;
+    border: 1px solid black;
+    color: white;
+    cursor: pointer;
+    background-image: linear-gradient(to right,  #f9ca24, #ff7f50, #ff6450, #eb4d4b);
+    transition: 1s;
+    background-size: 250%;
+}
+
+button:hover {
+    background-position: right;
+    
+}
+
+
+
+@media (max-width: 767px) {
+    main {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    input[type="text"],
+    input[type="telephone"],
+    input[type="email"] {
+        display: block;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    
+    fieldset:first-child label  {
+        display: inline-block;
+        width: 23%;
+    }
+    fieldset:first-child input,
+    fieldset:first-child select  {
+        width: 75%;
+        padding: 0;
+    }
+
+    fieldset:first-child input[type="telephone"]:last-child {
+        width: auto;
+    }
+
+
+    
+
+
+}
