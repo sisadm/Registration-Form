@@ -37,7 +37,6 @@ h1 {
 main {
     
     margin: 0 auto;
-    max-width: 700px;
     background-color: #1D2228;
 }
 
@@ -52,18 +51,20 @@ h2 + p {
     width: 96%;
     margin: 0 auto;
     
+    
 }
 
 h2 {
     padding: 1em 0 5px 0;
-    text-align: center;
 }
 
-h2 +p {
-    padding-bottom: 1em;
-    margin-bottom: 0.4em;
-    border-bottom: 3px solid #FEF8E2;
+h2 + p {
+    text-align: justify;
+    width: 80%;
+    margin-bottom: 2em;
 }
+
+
 
 h2,
 legend {
@@ -137,12 +138,23 @@ option:disabled {
 legend {
     font-weight: 600;
     font-size: 1.45em;
-    padding: 0.8em 0 0.3em;
-    border-top: 1px solid #FEF8E2;
+    padding: 0.3em 0 0.3em;
+    border-top: 3px solid #FEF8E2;
     width: 100%;
+    height: 3em;
+    
+    
     
 }
 
+fieldset:first-child > legend:before {
+    content: ' ';
+    display: table;
+    padding: 1px 0;
+    margin: 2px 0 1.6em;
+    border-top: 1px solid #FEF8E2;
+    width: 100%;
+}
 
 label {
     margin-top: 1em;
@@ -194,10 +206,14 @@ button:hover {
 
 
 
-@media (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 767px) {
     main {
         width: 90%;
         margin: 0 auto;
+    }
+
+    h2 + p{
+        width: 60%;
     }
     
     input[type="text"],
@@ -210,6 +226,22 @@ button:hover {
 }
 
 @media (min-width: 768px) {
+
+    h1 {
+        height: 2em;
+        padding-top: 1%;
+        font-size: 20px;
+    }
+
+    h2 + p {
+        text-align: center;
+    }
+
+
+    main {
+        width: 70%;
+        max-width: 768px;
+    }
     
     fieldset:first-child label  {
         display: inline-block;
@@ -230,3 +262,4 @@ button:hover {
 
 
 }
+
